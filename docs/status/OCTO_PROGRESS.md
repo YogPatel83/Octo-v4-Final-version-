@@ -1,0 +1,68 @@
+# Octo Progress
+
+## Completed in code
+- Fresh Next.js npm project
+- Tailwind setup
+- Supabase server client
+- Supabase browser client
+- Environment example
+- Health API
+- Profile API
+- Companies API
+- Company members API
+- Agents API
+- Agent item CRUD
+- Teams API
+- Team item CRUD
+- Team-agent linking API
+- Workflows API
+- Workflow item CRUD
+- Workflow steps API
+- Tasks API
+- Task item CRUD
+- Task run endpoint
+- Worker pull endpoint
+- Worker complete endpoint
+- Approvals API
+- Approval approve/reject endpoint
+- Datasets API
+- Dataset item CRUD
+- Skills API
+- Skill item CRUD
+- Marketplace API
+- Marketplace item CRUD
+- Subscriptions API
+- Billing status API
+- Paddle checkout placeholder
+- Paddle webhook placeholder
+- Agent model key API
+- Agent tools API
+- Agent knowledge files API
+- Audit log API
+- Audit log helper
+- Worker skeleton
+- Google Stitch frontend prompt
+- Supabase SQL docs
+
+## Not completed yet
+- Real Supabase Auth login/signup UI
+- Real protected route middleware
+- Real frontend dashboard
+- Real frontend pages
+- Real company switcher
+- Real Builder AI generation
+- Real model execution
+- Real encrypted BYOK storage
+- Real Composio OAuth/action execution
+- Real Paddle checkout
+- Real Paddle webhook verification
+- Real file uploads
+- RAG/vector search
+- Memory system
+- Swarm delegation engine
+- Agent-to-agent communication
+- Marketplace purchases
+- Seller payouts
+- Vercel deployment
+- DigitalOcean worker deployment
+- Production security review

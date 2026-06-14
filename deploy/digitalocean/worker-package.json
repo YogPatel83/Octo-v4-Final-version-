@@ -1,0 +1,13 @@
+{
+  "name": "octo-worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node workers/index.js",
+    "pm2:start": "pm2 start workers/index.js --name octo-worker",
+    "pm2:logs": "pm2 logs octo-worker",
+    "pm2:restart": "pm2 restart octo-worker"
+  },
+  "dependencies": {}
+}
