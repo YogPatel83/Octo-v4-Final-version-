@@ -1,35 +1,12 @@
 import { NextResponse } from "next/server";
 import { processUnifiedPaddleWebhook } from "@/lib/paddle/process-webhook";
-
-function verifyPaddleWebhookBasic(input: {
-  rawBody: string;
-  signature: string | null;
-}) {
-  if (!process.env.PADDLE_WEBHOOK_SECRET) {
-    return {
-      ok: false,
-      reason: "PADDLE_WEBHOOK_SECRET missing.",
-    };
-  }
-
-  if (!input.signature) {
-    return {
-      ok: false,
-      reason: "Missing paddle-signature header.",
-    };
-  }
-
-  return {
-    ok: true,
-    reason: "Signature header present.",
-  };
-}
+import { verifyPaddleSignature } from "@/lib/paddle/verify-signature";
 
 export async function POST(req: Request) {
   const rawBody = await req.text();
   const signature = req.headers.get("paddle-signature");
 
-  const verification = verifyPaddleWebhookBasic({
+  const verification = verifyPaddleSignature({
     rawBody,
     signature,
   });
