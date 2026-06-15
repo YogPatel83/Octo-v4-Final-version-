@@ -24,6 +24,7 @@ export async function callAI(input: {
   const provider = input.provider || "openai";
 
   const payload = {
+    provider,
     model: input.model || getDefaultModel(provider),
     messages: input.messages,
     apiKeyOverride: input.apiKeyOverride,
