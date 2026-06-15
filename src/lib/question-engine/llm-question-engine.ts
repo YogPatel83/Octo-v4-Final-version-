@@ -57,7 +57,7 @@ Return this shape:
     ],
   });
 
-  const raw = response.text || "{}";
+  const raw = response.content || "{}";
 
   try {
     return JSON.parse(raw);
