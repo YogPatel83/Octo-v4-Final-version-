@@ -47,7 +47,7 @@ export async function runUniversalConnectorAction(input: {
   const url = `${baseUrl}${path}`;
   const variables = input.variables || {};
 
-  const headers = {
+  const headers: Record<string, string> = {
     "content-type": "application/json",
     ...(fillTemplate(action.headers || {}, variables) as Record<string, string>),
   };
